@@ -1,0 +1,23 @@
+#A Kingdom Collection mod
+#The Kingdom Collection Core library is source-available at https://github.com/Kingdom-Collection-Mods.
+#Contact: Best over Discord Reloader#6504 or via Steam.
+#Copyright Reloader - All Rights Reserved
+#Define estate loyalty and influence modifiers here
+
+kth_estate = {
+	modifier_definition = {
+		type = loyalty
+		key = kth_estate_loyalty_modifier
+		trigger = {
+			has_estate = kth_estate
+		}
+	}
+
+	modifier_definition = {
+		type = influence
+		key = kth_estate_influence_modifier
+		trigger = {
+			has_estate = kth_estate
+		}
+	}
+}

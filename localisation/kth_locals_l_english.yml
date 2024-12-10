@@ -1,0 +1,438 @@
+﻿l_english:
+ ###Karthago
+ KTH: "Carthage"
+ KTH_ADJ: "Carthaginian"
+ KTH_ADJ2: "Carthaginian"
+ kth_ideas: "Carthaginian Ideas"
+ kth_ideas_start: "Carthaginian Traditions"
+ kth_ideas_bonus: "Carthaginian Ambition"
+ 
+ ##Carthage Ideas
+ kth_mediterranean_tradehub: "Center of Trade"
+ kth_mediterranean_tradehub_desc: "Carthage is the center of the Mediterranean trade."
+ kth_slave_fleet: "Slave Fleet"
+ kth_slave_fleet_desc: "The Carthaginian Navy needs slaves."
+ kth_attract_italian_merchants: "Italien Traders"
+ kth_attract_italian_merchants_desc: "We attract Italian traders and scholars."
+ kth_punic_warriors: "Punic Warriors"
+ kth_punic_warriors_desc: "The Punic warriors fight conscientiously."
+ kth_tolerance: "Tolerance"
+ kth_tolerance_desc: "Carthage does not put much emphasis on religion."
+ kth_naval_academy: "Naval Academy"
+ kth_naval_academy_desc: "In our naval academies, aspiring admirals gain naval experience."
+ kth_carthaginian_scholars: "Carthaginian Scholars"
+ kth_carthaginian_scholars_desc: "In the universities, our scholars gather valuable knowledge."
+ 
+ ##Decisions
+ kth_form_carthage_title: "Found City-State of Carthage"
+ kth_form_carthage_desc: "Carthage was the center or capital city of the ancient Carthaginian civilization, on the eastern side of the Lake of Tunis in what is now the Tunis Governorate in Tunisia. Carthage was widely considered the most important trading hub of the Ancient Mediterranean and was arguably one of the most affluent cities of the Ancient World."
+ kth_carthago_nova_found_title: "Move Capital to Europe"
+ kth_carthago_nova_found_desc: "Carthago Nova was once build by the Carthaginien people. It's time to revive the city and move our administration there."
+ kth_move_to_genoa_title: "Move Capital to Palermo"
+ kth_move_to_genoa_desc: "Because you do not own the DLC Wealth of Nations, you have this decision that allows you to move your capital to the genoa trade node."
+ kth_carthage_republic_title: "Empower Suffets and disempower the Clan"
+ kth_carthage_republic_desc: "The Magonid clan was compelled to compromise and allow representative and even some democratic institutions. Carthage remained to a great extent an oligarchic republic, which relied on a system of checks and balances and ensured a form of public accountability. At the head of the Carthaginian state were now two annually elected, not hereditary, Suffets similar to modern day executive presidents."
+ kth_found_before_adm_requirement_tt: "If §RNOT§! at least §YAdministrative Technology§! §Y10§!:"
+ 
+ ##Culture
+ kth_carthaginian: "Carthaginian"
+ 
+ ##Carthage Missions
+ #Slot 1
+ #Local Conquest
+ kth_secure_carthage_title: "Legacy of the Magonids"
+ kth_secure_carthage_desc: "The Magonids were a political dynasty of Ancient Carthage from 550 BCE to 340 BCE. The dynasty was first established under Mago I, under whom Carthage became pre-eminent among the Phoenician colonies in the western Mediterranean. Under the Magonids, the Carthaginian Empire expanded to include Sardinia, Libya, and for almost a decade much of Sicily."
+ kth_secure_western_coast_title: "Berber in the West"
+ kth_secure_western_coast_desc: "To protect the trade in the Mediterranean sea, we enslave the pirates."
+ kth_secured_title: "Pirates enslaved"
+ kth_secured_desc: "To protect the trade in the Mediterranean sea, we enslave the pirates."
+ kth_sahara_east_title: "Trade Routes in Fezzan"
+ kth_sahara_east_desc: "To protect the trade in the Mediterranean sea, we enslave the pirates."
+ kth_sahara_west_title: "Trade Routes in Morocco"
+ kth_sahara_west_desc: "To protect the trade in the Mediterranean sea, we enslave the pirates."
+ #Local Hegemony
+ kth_local_hegemony_title: "Local Hegemony"
+ kth_local_hegemony_desc: "Dominiert die Region Maghreb und setzt eure Ansprüche auf die Region durch."
+ kth_spain_title: "Trade Port Sevilla"
+ kth_spain_desc: "Build a entrepot."
+ #Decadency and Revolution
+ kth_decadent_nation_title: "Decadent Nation"
+ kth_decadent_nation_desc: ""
+ kth_enrichment_of_oligarchy_modifier: "Enrichment of the Oligarchy"
+ desc_kth_enrichment_of_oligarchy_modifier: ""
+ kth_revolutionary_carthage_title: "Ar-Rabi Al-Carthagi"
+ kth_revolutionary_carthage_desc: "The people will rise up in face of the decadency of the oligarchy in Carthage. It is time for the Carthaginian Spring."
+ kth_successful_revolution_modifier: "Successful Carthaginian Spring"
+ desc_kth_successful_revolution_modifier: ""
+ kth_failed_revolution_modifier: "Failed Carthaginian Spring"
+ desc_kth_failed_revolution_modifier: ""
+
+ #Slot 2
+ #Local Conquest
+ kth_secure_eastern_coast_title: "Libyan Pirates in the East"
+ kth_secure_eastern_coast_desc: "To protect the trade in the Mediterranean sea, we enslave the pirates."
+ #Conquer Roots
+ kth_alexandria_title: "Trade Port Alexandria"
+ kth_alexandria_desc: "Build a entrepot."
+ kth_motherland_title: "Liberate Mother City"
+ kth_motherland_desc: "Once Punic colonist were sailing fron Sayda to Carthage, now we have to reconquer our motherland."
+ #Carthago Nova
+ kth_end_of_pirates_title: "End of Piracy"
+ kth_end_of_pirates_desc: "To protect the trade in the Mediterranean sea, we enslave the pirates."
+ kth_carthago_nova_title: "Carthago Nova"
+ kth_carthago_nova_desc: "Times have changed, maybe we should move our capital to Europe and found Carthago Nova in Alicante."
+
+
+ #Slot 3
+ #Navy
+ kth_develop_shipyards_title: "Rebuild the Great Harbour"
+ kth_develop_shipyards_desc: "To build a great fleet for the 4th Punic war, we need to build shipyards."
+ kth_develop_navy_title: "Prepare for 4th Punic War"
+ kth_develop_navy_desc: "To establish our dominance in the Mediterranean Sea, we need a strong navy."
+ #Revenge vs Rome
+ kth_foothold_italy_title: "Foothold in Italy"
+ kth_foothold_italy_desc: "We have to gain a foothold in Italy to assert our trade interests."
+ kth_south_italy_title: "Winning 4th Punic War"
+ kth_south_italy_desc: "When we have secured our position in Italy, we can challenge our arch enemy, Rome."
+ kth_rome_title: "Revenge or Forgiveness?"
+ kth_rome_desc: "During the 3rd Punic war, fought between the former Phoenician colony of Carthage and the Roman Republic, the Siege of Carthage resulted in the complete destruction of the city, the annexation of all remaining Carthaginian territory by Rome, and the death or enslavement of the entire Carthaginian population.\n\nIt is up to us to seek revenge and show them what Roma Delenda Est means, or forgive them."
+ #Legacy of Hannibal
+ kth_over_the_alps_title: "Over the Alps"
+ kth_over_the_alps_desc: "We should follow Hannibals Legacy but we need elephants! Maybe we can import elephants, if we conquer a East African province or a province in South West India."
+ kth_battle_of_cannae_title: "Battle of Cannae"
+ kth_battle_of_cannae_desc: "The Battle of Cannae was a key engagement of the Second Punic War between the Roman Republic and Carthage, which Hannibal won. Let's do it again."
+ kth_battle_of_cannae_modifier: "Battle of Cannae"
+ desc_kth_battle_of_cannae_modifier: ""
+ 
+ #Slot 4
+ #Trade
+ kth_dominate_tunis_title: "Dominate Tunis"
+ kth_dominate_tunis_desc: "Dominate the trade in Tunesien."
+ kth_dominate_genoa_title: "Dominate Genoa"
+ kth_dominate_genoa_desc: "Dominiert the trade in Genoa."
+ #Trade Posts
+ kth_corsica_sardinia_title: "Trade Post Sardinia"
+ kth_corsica_sardinia_desc: "Found a Carthaginian trade post."
+ kth_baleares_title: "Trade Post Baleares"
+ kth_baleares_desc: "Found a Carthaginian trade post."
+ kth_valencia_title: "Trade Port Valencia"
+ kth_valencia_desc: "Build a entrepot."
+ #Mare Nostrum
+ kth_through_the_dessert_title: "Through the Dessert"
+ kth_through_the_dessert_desc: "West Africa is of vital importance."
+ kth_through_the_dessert_modifier: "Through the Dessert"
+ desc_kth_through_the_dessert_modifier: ""
+ kth_westafrican_trade_title: "Westafrican Trade"
+ kth_westafrican_trade_desc: ""
+
+ 
+ #Slot 5
+ #Trade
+ kth_trade_port_title: "Dig the Cothon"
+ kth_trade_port_desc: "A cothon is an artificial, protected inner harbor such as that in Carthage during the Punic Wars c.200 BC.\nCothons were generally found in the Phoenician world.\nThe cothon at Carthage was divided into a rectangular merchant harbor followed by an inner protected harbor reserved for military use only. This inner harbor was circular and surrounded by an outer ring of structures divided into a series of docking bays for ship maintenance, along with an island structure at its center that also housed navy ships. Each individual docking bay featured a raised slipway. Above the raised docking bays was a second level consisting of warehouses where oars and rigging were kept along with supplies such as wood and canvas."
+ kth_world_trade_port_title: "All Ways lead to Carthage"
+ kth_world_trade_port_desc: "Carthage's status in the world must grow and we must expand our port."
+ #Religion
+ kth_religion_foundation_mission_title: "Religious Foundation"
+ kth_religion_foundation_mission_desc: "Religious has not played a big role in Carthage but we must still choose what we will base our society on." #mediocre
+ kth_religion_path_mission_title: "Religious Path"
+ kth_religion_path_mission_desc: "Choosing the religious path will allows to explore the Semitic path or challenge Rome if we are Catholic."
+ kth_religion_reformed_mission_title: "Religion Reformed"
+ kth_religion_reformed_mission_desc: ""
+ kth_religions_appeased_title: "Appeased Carthage"
+ kth_religions_appeased_desc: "We should accept the people and their religion in Carthage."
+ #Mare Nostrum
+ kth_end_mediterranean_focus_title: "Mare Nostrum"
+ kth_end_mediterranean_focus_desc: "Rule the Mediterranean and set sail for the high seas."
+ kth_atlantic_title: "Cross the Atlantic"
+ kth_atlantic_desc: "We have conquered the Mediterranean! Now we are conquering the Atlantic."
+ kth_colonies_integrate_title: "Integrated Colonies"
+ kth_colonies_integrate_desc: "The Carthaginian culture is desired by our colonies."
+
+#Achievement Missions
+ kth_achievement_1_title:0 "§YAchievement:§! Hannibal's Legacy"
+ kth_achievement_1_desc:0 ""
+ kth_achievement_2_title:0 "§YAchievement:§! Catholic delenda est"
+ kth_achievement_2_desc:0 ""
+ kth_achievement_3_title:0 "§YAchievement:§! Tikun Olam"
+ kth_achievement_3_desc:0 "Tikun Olam meaning \"Fixing the World\" in hebrew"
+ kth_achievement_4_title:0 "§YAchievement:§! Great Canaan"
+ kth_achievement_4_desc:0 ""
+ kth_achievement_5_title:0 "§YAchievement:§! Salty Business"
+ kth_achievement_5_desc:0 ""
+
+#Release Event
+ kth_release_2_0_event_title:0 "Carthage \"Trinity\" Release"
+ kth_release_2_0_event_desc: "Greetings player, the Carthage 2.0 update is now available for early access. Thanks for all the feedback so far. If you like the mod and haven't done so yet, please give the mod a like on the workshop.\n\n - A Kingdom Collection mod"
+ kth_release_2_0_event_option:0 "Enjoy the \"Trinity\" update!"
+ kth_release_2_0_event_tt: "Apply 2.0 update"
+
+
+ ###Modifiers
+ #Perm Modifiers
+ kth_muslim_founders: "Muslim Founders"
+ desc_kth_muslim_founders: "We broke with the pirate traditions. Our Muslim neighbors didn't like it, but our people are much better off now."
+ kth_christian_founders: "Christian Founders"
+ desc_kth_christian_founders: "Carthage was rebuilt by the Christians, but we are tolerant towards the Muslims."
+ kth_mediterranean_focus: "Mediterranean Focus"
+ desc_kth_mediterranean_focus: "Our focus is on the Mediterranean, which is why our large ships are geared towards inland waters."
+ kth_beyond_mediterranean: "Beyond the Mediterranean Sea"
+ desc_kth_beyond_mediterranean: "We must look beyond the Mediterranean Sea and rule all the waves."
+ 
+ #Perm Mission Modifiers
+ kth_atlantic_colonies: "Colonial Ambitions"
+ desc_kth_atlantic_colonies: "Colonial ambitions"
+ kth_colonies_integrated: "Colonies integrated"
+ desc_kth_colonies_integrated: "Colonies integrated"
+ 
+ #Temp Mission Modifiers
+ kth_enslave_pirates: "Pirates enslaved"
+ desc_kth_enslave_pirates: "To protect the trade in the Mediterranean sea, we enslave the pirates."
+ kth_enslave_pirates_east: "Pirates enslaved in the East"
+ desc_kth_enslave_pirates_east: "To protect the trade in the Mediterranean sea, we enslave the pirates."
+ kth_enslave_pirates_west: "Pirates enslaved in the West"
+ desc_kth_enslave_pirates_west: "To protect the trade in the Mediterranean sea, we enslave the pirates."
+ kth_enslaved_all_pirates: "All Pirates enslaved"
+ desc_kth_enslaved_all_pirates: "To protect the trade in the Mediterranean sea, we enslave the pirates."
+ kth_religious_peace: "Religious Peace"
+ desc_kth_religious_peace: "Religion doesn't play a big role in our empire."
+ kth_march_over_the_alps: "March over the Alps"
+ desc_kth_march_over_the_alps: "Follow the legacy of Hannibal."
+ 
+ #Temp Event Modifiers
+ kth_import_indian_elephants: "Indian Elephants"
+ desc_kth_import_indian_elephants: "Importing Indian elephants and field them in our army."
+ kth_import_african_elephants: "African Elephants"
+ desc_kth_import_african_elephants: "Importing African elephants and field them in our army."
+ kth_colonial_spirit: "Colonial Spirit"
+ desc_kth_colonial_spirit: "We are eager to found new colonies."
+
+#Triggered modifiers
+kth_alexandrian_trade: "Carthaginian Trade from Alexandria"
+kth_aleppo_trade: "Carthaginian Trade from Aleppo"
+kth_safi_trade: "Carthaginian Trade from Safi"
+kth_home_trade_node_is_tunis_tt: "Main trading port is §YTunis§!"
+ 
+ ###Events
+ #Triggered Events
+ kth_foundation_title: "Founding of Carthage"
+ kth_foundation_desc: "Carthage was the center or capital city of the ancient Carthaginian civilization, on the eastern side of the Lake of Tunis in what is now the Tunis Governorate in Tunisia. Carthage was widely considered the most important trading hub of the Ancient Mediterranean and was arguably one of the most affluent cities of the Ancient World."
+ kth_foundation_christian: "Fight off the pirates"
+ kth_foundation_muslim: "Break with the pirating tradition"
+ kth_roman_question_title: "Revenge or Forgiveness?"
+ kth_roman_question_desc: "During the 3rd Punic war, fought between the former Phoenician colony of Carthage and the Roman Republic, the Siege of Carthage resulted in the complete destruction of the city, the annexation of all remaining Carthaginian territory by Rome, and the death or enslavement of the entire Carthaginian population.\n\nIt is up to us to seek revenge and show them what Roma Delenda Est means, or forgive them."
+ kth_roman_question_1: "Forgive and assimilate them"
+ kth_roman_question_2: "Roma delenda est!"
+ 
+ #Carthage Flavor Events
+ ##generic
+ kth_yes: "Yes, indeed!"
+ kth_no: "No, thanks."
+ kth_smash_them: "We will smash them!"
+ kth_give_autonomy: "Give them more autonomy."
+ kth_thanks: "Thank you!"
+ kth_accept_demands: "Accept demands."
+ kth_profit: "Profit"
+ kth_send_help: "Send help"
+ kth_prepare_for_war: "Prepare for war"
+ kth_keep_government: "Keep government"
+ kth_become_monarchy: "Become a monarchy"
+ kth_become_republic: "Become a republic"
+ kth_become_theocracy: "Become a theocracy"
+ ##specific
+ kth_flavor_capital_protection_title: "Build a Castle"
+ kth_flavor_capital_protection_desc: "Carthaginians do not feel safe, start building a defense system."
+ kth_flavor_capital_protection_1: "Begin building a castle"
+ kth_flavor_capital_grows_title: "Carthage is growing"
+ kth_flavor_capital_grows_desc: "Since you started fighting the pirates, Carthage is growing and the traders are happy. New businesses are emerging, many foreign traders are coming and the townspeople are making more and more money."
+ kth_flavor_capital_grows_1: "Beautiful"
+ kth_flavor_conflicts_italy_title: "Peasant Conflict in Italy"
+ kth_flavor_conflicts_italy_desc: "The unaccepted peasants of Neapels or Umbria are being sacked by their neighboring Carthaginians."
+ kth_flavor_conflicts_italy_1: "Let them raid each other"
+ kth_flavor_conflicts_italy_2: "Step in"
+ kth_indian_elephants_title: "Import Indian Elephants?"
+ kth_african_elephants_title: "Import African Elephants?"
+ kth_elephants_desc: "Hannibal had more than 80 elephants at his disposal to intimidate his enemies on the battlefield, but they were a logistical nightmare for the army. Now we have the unique opportunity to have elephants in our ranks once again."
+ kth_elephants_1: "Import Elephants and train them for Warfare"
+ kth_colonial_spirit_title: "Colonial Spirit?"
+ kth_colonial_spirit_desc: "Once the city of Carhtage developed from a Phoenician colony into the capital of the Punic empire which dominated large parts of the Southwest Mediterranean during the first millennium BC. Now we have to renew the colonial spirit and once again become a great empire."
+ kth_colonial_spirit_1: "Renew the ancient colonial spirit"
+ kth_discovery_spirit_title: "Discovery Spirit?"
+ kth_discovery_spirit_desc: "To embrace our past, we must explore beyond the Mediterranean sea and need to know what is beyond the horizon."
+ kth_discovery_spirit_1: "Hire an explorer"
+ kth_cot_has_profit_title: "Trade is flourishing"
+ kth_cot_has_profit_desc: "Since you started fighting the pirates, Carthage is growing and the traders are happy. New businesses are emerging, many foreign traders are coming and the townspeople are making more and more money."
+ kth_italy_formed_title: "Italy formed"
+ kth_italy_formed_desc: "Our arch nemesis Italy was able to unite his country. To hell with them, we must prepare for war!"
+ #2.0 flavor events
+ kth_join_hre_league_title: "Join the Protestant League against the Italien Pope"
+ kth_join_hre_league_desc: "War in the Protestant League is loaming. The Holy Roman Empire is split between Catholics and Protestants. We despise the authority of the pope as well and it's a good chance to weaken his position."
+ kth_revolt_new_trade_post_title:0 "Revolt in new Trade Post"
+ kth_revolt_new_trade_post_desc:0 "Our newly founded Trade Post is growing and has become a Trade Hub. The colonist demand more privileges and are revolting."
+ kth_carthaginian_estate_title:0 "Carthaginian Estate"
+ kth_carthaginian_estate_desc:0 "The founding of Carthage lead to a new estate rising in power. Carthage is not only the center of our empire but also where the power resignes. Now with the Carthaginian citiziens becoming more powerful, we have the chance to give them land from another estate."
+ kth_carthaginian_estate_take_none:0 "Stay neutral on the issue"
+ kth_carthaginian_estate_take_church:0 "Take privileges of the church"
+ kth_carthaginian_estate_take_burghers:0 "Take land of the burghers"
+ kth_carthaginian_estate_take_nobles:0 "Take land of the nobles"
+ kth_carthaginian_estate_take_all:0 "Take land of every estate"
+
+
+ ###Religion 2.0 Trinity
+ ##Foundation
+ kth_religion_choose_foundation_title: "Choose Religious Foundation"
+ kth_religion_choose_foundation_desc: "Religious has not played a big role in Carthage but we must still choose what we will base our society on." #mediocre
+ kth_religion_foundation_disaster_start_title: "Religious Foundation shaken"
+ kth_religion_foundation_disaster_start_desc: "Despite $MONARCH$'s effort to mediate between the different religious groups in our nation, conflicts have been erupting on a regular basis. The situation has worsened and without drastic measures, we will soon be engulfed in a religious civil war."
+ kth_religion_foundation_disaster_end_title: "End of Religious Foundation Conflict"
+ kth_religion_foundation_disaster_end_desc: "Our country has now recovered from the disastrous fractions of religious turmoil and is now together in one piece."
+ EVTOPTA2038:0 "One Faith!"
+ kth_religious_foundation_changed_disaster: "Religious Foundation Conflict"
+
+ kth_religion_foundation_changed_start_tt: "Will start §RReligious Foundation Conflict§! disaster"
+ kth_religion_change_foundation_sunni: "Convert to Islam"
+ kth_religion_change_foundation_catholic: "Convert to Catholicism"
+ kth_religion_keep_foundation: "Keep Religious Foundation"
+ kth_had_religious_foundation_changed_disaster_tt: "Has had §YReligious Foundation Changed§! disaster"
+
+ kth_not_able_to_convert_tt: "§RMight not be able to convert Heathen provinces§!"
+ kth_religious_foundation_tolerant: "Tolerant Religious Foundation"
+ desc_kth_religious_foundation_tolerant: "In a time plagued by religious struggles, efforts to mediate between these different religious groups only became harder."
+ kth_religious_foundation_intolerant: "Intolerant Religious Foundation"
+ desc_kth_religious_foundation_intolerant: "Religious struggles, some more violent than others, were very common during this time and revolts would spring up on a regular basis."
+
+ ##Path Meta
+ kth_religion_choose_path_title: "Choose Religious Path"
+ kth_religion_choose_path_desc: "Donatist of the Christian group:\nDonatism was a heresy leading to schism in the Church of Carthage from the fourth to the sixth centuries AD.\n\nJudaic of the Jewish Group:\nThe oldest Abrahamic religion in the game, Judaism builds upon the Torah and the traditions and scriptures of the Jewish people going back over 3000 years.\n\nCanaanite of the Ancient Semitic Group:\nRevived version of the ancient polytheistic Canaanite religion."
+ kth_disable_donatist_tt: "§RDisables Donatist§!"
+ kth_disable_jewish_path_tt: "§RDisables Judaic§!"
+ kth_disable_pagan_path_tt: "§RDisables Canaanite§!"
+ kth_religion_choose_path_donatist: "Become Donatism"
+ kth_religion_choose_path_jewish: "Path to become Judaic"
+ kth_religion_choose_path_pagan: "Path to become Canaanite"
+ kth_religion_keep_path: "Keep current Path"
+ kth_jewish_path_start_tt: "Will start §GJudaic path§! leading to conversion"
+ kth_pagan_path_start_tt: "Will start §GCanaanite path§! leading to conversion"
+ 
+ #Path Judaic and Canaanite
+ kth_jewish_path_disaster: "Path to Judaism"
+ desc_kth_jewish_path_disaster: "Monthly progress can include conversion of a province or a whole area but also regressive events."
+ kth_jewish_path_sucess_tt: "Successful finished Judaic path event chain"
+
+ kth_pagan_path_disaster: "Path to Canaanite"
+ desc_kth_pagan_path_disaster: "Monthly progress can include conversion of a province or a whole area but also regressive events."
+ kth_pagan_path_sucess_tt: "Successful finished Canaanite path event chain"
+
+ kth_religion_path_jewish_random_success_title: "End of the Jewish Path"
+ kth_religion_path_jewish_random_success_desc: "[Root.Monarch.GetTitle] [Root.Monarch.GetName], Carthage is now embracing the newly revised religion, Judaism."
+ kth_religion_pagan_path_random_success_title: "End of the Canaanite Path"
+ kth_religion_pagan_path_random_success_desc: "[Root.Monarch.GetTitle] [Root.Monarch.GetName], Carthage is now embracing the newly revised religion, Canaanite."
+
+ kth_religion_path_jewish_end_monarchy_title: "Change to Jewish Kingdom"
+ kth_religion_pagan_path_convert: "Convert to Canaanite"
+
+ kth_religion_path_pagan_pilgrimage_title:0 "Time for a Pilgrimage to Canaan"
+
+#Generic Path Events
+ kth_religion_pagan_disaster_start_title: "Begin of the Canaananite Path"
+ kth_religion_pagan_disaster_start_desc: "We are on our path to become Canaanite. The Canaanite religion refers to the group of ancient Semitic religions practiced by the Canaanites living in the ancient Levant."
+ kth_religion_pagan_disaster_end_title: "End of the Canaanite Path"
+ kth_religion_pagan_disaster_end_desc: "We see the end of the path to become Canaanite. On our path we have made tremendous progress and learned about new angles on how to look at live. It's time to embrace Canaanite."
+ kth_religion_path_jewish_start_title: "Begin of the Judaic Path"
+ kth_religion_path_jewish_start_desc: "We are on our path to become Judaic. Judaic comprises the collective religious, cultural and legal tradition and civilization of the Jewish people. Judaism is considered by religious Jews to be the expression of the covenant that God established with the Children of Israel. Our ancestors come from the Land of Canaan also know as Israel today."
+ kth_religion_path_jewish_end_title: "End of the Judaic Path"
+ kth_religion_path_jewish_end_desc: "We see the end of the path to become Judaic. On our path we have made tremendous progress and learned about new angles on how to look at live. It's time to embrace Judaism."
+ kth_religion_path_target_conversion_title: "Conversion of the Cornerstones of our new Religion"
+ kth_religion_path_target_conversion_desc: "It's time convert the areas that are most holy to the new religion."
+ kth_religion_path_convert_palestine: "Convert Palestine"
+ kth_religion_path_convert_algiers: "Convert Algiers"
+ kth_religion_path_convert_tigray: "Convert Tigray"
+ kth_religion_path_generic_conversion_title: "[kth_generic_conversion_target.GetName] converts to the new Religion"
+ kth_religion_path_generic_conversion_desc: "Another community in our country is learning of the new faith we are discovering. The religion will guide our culture and traditions. Bring our civilization to glory. We follow our ancestors tradition from the Land of Canaan also know as Israel today."
+ kth_religion_path_generic_conversion_yes_option: "[kth_generic_conversion_target.GetName] converts"
+ kth_religion_path_jewish_king_david_title: "Judaic Path King David"
+ kth_religion_path_jewish_king_david_desc: "Just like David third king of the United Monarchy of Israel and Judah, [Root.Monarch.GetName] should crown him self king of Isreal and Judah and protector of all jews." #could be longer
+ kth_religion_path_continues_tt: "§YContinue on the Path§!"
+ kth_religion_path_jewish_counterrebels_title: "Anti-Semits from [kth_jewish_antisemit_target.GetName]"
+ kth_religion_path_jewish_counterrebels_desc: "We are still on the path to become Judaic but anti semitic sentiments are rising. Antisemitism has never lead to anything good but only innocent people being lynched." #Maybe something more meaningful
+ kth_religion_path_continue:0 "Continue on the path"
+ kth_religion_pagan_path_convert_palestine_syria:0 "Convert Land of Canaan"
+ kth_pagan_path_start_flag: "Path to Canaanite"
+ kth_jewish_path_start_flag: "Path to Judaic"
+
+ kth_pagan_path_target_area_tt: "Embrace both Canaanite Holy Sites:\n - §YSyria area§!\n - §YPalestine area§!\nand §YPath to Canaanite§! for at least §Y10 years§!"
+ kth_jewish_path_target_area_tt: "Embrace one Judaic Holy Sites:\n - §YAlgiers area§!\n - §YPalestine area§!\n - §YTigray area§!\nand §YPath to Judaism§! for at least §Y10 years§!"
+ kth_religion_path_end_target_tt: "§GEmbraces Holy Site and ends Religious Path successfully§!"
+ kth_religion_path_end_successful_tt: "§GEnds Religious Path successfully§!"
+
+ kth_religion_donatist_government_title: "Donatist Government"
+ kth_religion_donatist_government_desc: "As Donatist we now have the option to put the clergy into power, will we do so?"
+
+ kth_religion_path_jewish_extremists_title: "Judaic Extremists from [kth_jewish_extremist_target.GetName]"
+ kth_religion_path_jewish_extremists_desc: "Judaic Extremist are eager to spread their religion. They are operating in the underground and carrying out protests and revolts."
+ kth_anti_religion_path_modifier: "Anti Religion Path"
+ desc_kth_anti_religion_path_modifier: ""
+
+ kth_converted_by_extremists_modifier: "Converted by Extremists"
+ desc_kth_converted_by_extremists_modifier: ""
+
+###Estates
+ kth_estate:0 "Carthaginians"
+ kth_estate_ownership: "Carthaginians Land Ownership"
+ kth_estate_loyalty_modifier:0 "Carthaginian Loyalty Equilibrium"
+ kth_estate_influence_modifier:0 "Carthaginian Influence"
+ kth_privilege_mercs:0 "Special Mercenary Rights"
+ kth_privilege_mercs_desc:0 ""
+ kth_privilege_ban_swords:0 "Agonistic Ban Use of Swords"
+ kth_privilege_ban_swords_desc:0 ""
+ kth_privilege_free_trade_posts:0 "Free Trade Posts"
+ kth_privilege_free_trade_posts_desc:0 ""
+ kth_privilege_dependent_trade_posts:0 "Dependent Trade Posts"
+ kth_privilege_dependent_trade_posts_desc:0 ""
+ kth_privilege_slaves_for_navy:0 "Slaves for the Navy"
+ kth_privilege_slaves_for_navy_desc:0 ""
+ kth_privilege_slaves_for_labour:0 "Slaves for Labour"
+ kth_privilege_slaves_for_labour_desc:0 ""
+ #Loyalty and influence modifier
+ #§Y$VAL$%§!
+ kth_estate_great_carthage: "(Nova) Carthage high development(>30): §Y$VAL$%§!"
+ kth_home_trade_node_is_tunis: "Main trading port is §YTunis§!: §Y$VAL$%§!"
+ kth_estate_carthage_is_capital: "(Nova) Carthage is capital"
+ kth_estate_carthage_is_capital_loyalty: "(Nova) Carthage is capital: "
+ kth_estate_carthage_is_capital_influence: "(Nova) Carthage is capital: §Y$VAL$%§!"
+ kth_estate_city_greater_carthage_influence: "A city is bigger then our Capital: §R$VAL$%§!"
+ kth_estate_city_greater_carthage_loyalty: "A city is bigger then our Capital: "
+ 
+ ###Various
+ ##Government
+ kth_oligarchy_reform: "Punic Republic"
+ kth_oligarchy_reform_desc: "The Punic Republic mixes elements of monarchy, aristocracy, and democracy. At the top is a ruler elected by the council of elders. Popular assemblies also exist."
+ kth_canaanite_republic_reform: "Canaanite Republic"
+ kth_canaanite_republic_reform_desc: "The Canaanite Republic mixes elements of monarchy, aristocracy, and democracy. At the top is a ruler elected by the council of elders. Popular assemblies also exist."
+ kth_republic_name: "Carthaginian Republic"
+
+ ##Mercs
+ kth_carthaginian_mercs:0 "Ancient Carthaginian Company"
+ kth_carthaginian_elephants_mercs:0 "Battle Elephants"
+
+ ##Great Projects
+ kth_punic_quarters: "Punic Quarters"
+
+ ##Costum Tooltip
+ kth_upgrade_cot_to_2: "Upgrades a Center of Trade to Level §Y2§!."
+ kth_create_new_cot: "Creates new Center of Trade."
+ kth_enable_carthago_nova: "§YEnables decision to move capital to Alicante in Iberia and found Carthago Nova.§!"
+ 
+ 
+ ##Flag Tooltips
+ kth_religion_foundation_keeped_flag_tt: "Has country flag: §YReligion Foundation kept§!"
+ kth_religion_foundation_changed_flag_tt: "Has country flag: §YReligion Foundation changed§!"
+ kth_had_religious_foundation_changed_disaster_flag_tt: "Has country flag: §YHad Religious Foundation Disaster§!"
+ kth_jewish_path_start_flag_tt: "Has country flag: §YStarted Jewish Path§!"
+ kth_jewish_path_success_flag_tt: "Has country flag: §YSuccessful Jewish Path§!"
+ kth_jewish_path_fail_flag_tt: "Has country flag: §YFailed Pagan Path§!"
+
+ kth_pagan_path_start_flag_tt: "Has country flag: §YStarted Pagan Path§!"
+ kth_pagan_path_success_flag_tt: "Has country flag: §YSuccessful Pagan Path§!"
+ kth_pagan_path_fail_flag_tt: "Has country flag: §YFailed Pagan Path§!"
+ KTH_sprite_pack:0 "Carthage Sprite Pack"

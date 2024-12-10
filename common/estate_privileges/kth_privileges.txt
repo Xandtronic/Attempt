@@ -1,0 +1,214 @@
+#A Kingdom Collection mod
+#The Kingdom Collection Core library is source-available at https://github.com/Kingdom-Collection-Mods.
+#Contact: Best over Discord Reloader#6504 or via Steam.
+#Copyright Reloader - All Rights Reserved
+kth_privilege_mercs = {
+	icon = privilege_demand_more_troops
+	is_valid = {
+		tag = KTH
+	}
+	land_share = 5
+	max_absolutism = -5
+	influence = -0.05
+	can_select = {
+		NOT = { army_professionalism = 0.5 }
+	}
+	on_granted = {
+		add_army_professionalism = -0.05
+	}
+	on_revoked = {
+	}
+	penalties = {
+		manpower_recovery_speed = -0.25
+	}
+	benefits = {
+		mercenary_manpower = 0.25
+		mercenary_discipline = 0.1
+	}
+	cooldown_years = 10
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+kth_privilege_ban_swords = {
+	icon = privilege_military_power
+	is_valid = {
+		tag = KTH
+	}
+	can_select = {
+		religion = kc_donatist
+	}
+	max_absolutism = -5
+	loyalty = 0.1
+	influence = 0.05
+	on_granted = {
+	}
+	penalties = {
+		shock_damage = -0.2
+	}
+	benefits = {
+		religious_unity = 0.2
+		tolerance_own = 1
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+kth_privilege_free_trade_posts = {
+	icon = privilege_grant_autonomy
+	is_valid = {
+		tag = KTH
+	}
+	max_absolutism = -10
+	loyalty = 0.05
+	can_select = {
+		NOT = { has_estate_privilege = kth_privilege_dependent_trade_posts }
+		341 = {
+			has_great_project = {
+				type = kth_punic_quarters
+				tier = 1
+			}
+		}
+	}
+	on_granted = {
+	}
+	on_revoked = {
+	}
+	penalties = {
+		trade_efficiency = -0.2
+	}
+	cooldown_years = 10
+	benefits = {
+		center_of_trade_upgrade_cost = -0.1
+		trade_company_investment_cost = -0.1
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+kth_privilege_dependent_trade_posts = {
+	icon = privilege_grant_new_world_charter
+	is_valid = {
+		tag = KTH
+		#shows the privilege even tho it's not valide
+		OR = {
+			NOT = { has_estate_privilege = kth_privilege_dependent_trade_posts }
+			all_owned_province = {
+				is_owned_by_trade_company = no
+			}
+		}
+	}
+	loyalty = 0.1
+	influence = 0.05
+	can_select = {
+		all_owned_province = {
+			is_owned_by_trade_company = no
+		}
+		NOT = { has_estate_privilege = kth_privilege_free_trade_posts }
+		341 = {
+			has_great_project = {
+				type = kth_punic_quarters
+				tier = 1
+			}
+		}
+	}
+	on_granted = {
+	}
+	on_revoked = {
+	}
+	penalties = {
+	}
+	benefits = {
+		trade_efficiency = 0.1
+	}
+	conditional_modifier = {
+ 		trigger = { 
+			any_owned_province = {
+				is_owned_by_trade_company = yes
+			}
+		}
+		modifier = {
+			trade_efficiency = -0.1			
+		}
+ 		is_bad = yes
+	}
+	ai_will_do = {
+		factor = 1
+	}
+}
+
+kth_privilege_slaves_for_navy = {
+	icon = privilege_comission_merchant_ships_for_war
+	is_valid = {
+		tag = KTH
+		NOT = { has_estate_privilege = kth_privilege_slaves_for_labour }
+	}
+	loyalty = 0.05
+	land_share = 0
+	max_absolutism = 0
+	influence = 0.05
+	can_select = {
+		NOT = { has_estate_privilege = kth_privilege_slaves_for_labour }
+		341 = {
+			has_great_project = {
+				type = kth_punic_quarters
+				tier = 1
+			}
+		}
+	}
+	on_granted = {
+	}
+	on_revoked = {
+	}
+	penalties = {
+		production_efficiency = -0.05	
+	}
+	benefits = {
+		sailors_recovery_speed = 0.10
+		nobles_loyalty_modifier = 0.05
+	}
+	cooldown_years = 5
+	ai_will_do = {
+		factor = 0
+	}
+}
+
+kth_privilege_slaves_for_labour = {
+	icon = privilege_seek_support_of_clergy
+	is_valid = {
+		tag = KTH
+		NOT = { has_estate_privilege = kth_privilege_slaves_for_navy }
+	}
+	loyalty = 0.1
+	land_share = 0
+	max_absolutism = 0
+	influence = 0.05
+	can_select = {
+		NOT = { has_estate_privilege = kth_privilege_slaves_for_navy }
+		341 = {
+			has_great_project = {
+				type = kth_punic_quarters
+				tier = 1
+			}
+		}
+	}
+	on_granted = {
+		
+	}
+	on_revoked = {
+	}
+	penalties = {
+		innovativeness_gain = -0.05
+	}
+	benefits = {
+		production_efficiency = 0.05
+		burghers_loyalty_modifier = 0.05
+	}
+	cooldown_years = 5
+	ai_will_do = {
+		factor = 0
+	}
+}

@@ -1,0 +1,22 @@
+		
+		
+	british_normandy = {
+		potential = {
+			always = yes
+		}
+		trigger = {
+			and ={
+				owner = {
+					OR = {
+					tag = ENG
+					tag = GBR
+					}
+				}
+				normandy_area	= {
+				type = all
+				country_or_non_sovereign_subject_holds = PREV
+				}
+			}
+		}
+		fire_damage = 0.075
+	}

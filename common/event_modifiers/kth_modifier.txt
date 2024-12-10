@@ -1,0 +1,146 @@
+#A Kingdom Collection mod
+#The Kingdom Collection Core library is source-available at https://github.com/Kingdom-Collection-Mods.
+#Contact: Best over Discord Reloader#6504 or via Steam.
+#Copyright Reloader - All Rights Reserved
+kth_muslim_founders={
+    global_unrest = -1
+}
+
+kth_christian_founders={
+    tolerance_heathen = 2
+    religious_unity = 0.1
+}
+
+kth_mediterranean_focus = {
+    galley_power = 0.20
+    heavy_ship_power = -0.25
+    heavy_ship_cost = 0.25
+}
+
+kth_beyond_mediterranean = {
+    naval_morale = 0.05
+    navy_tradition_decay = -0.005
+}
+
+#temp mission effects
+kth_enslave_pirates={
+    manpower_recovery_speed = 0.1
+    sailors_recovery_speed = 0.2
+    naval_maintenance_modifier = -0.1
+}
+
+kth_enslave_pirates_east={
+    manpower_recovery_speed = 0.1
+    sailors_recovery_speed = 0.2
+    naval_maintenance_modifier = -0.1
+}
+
+kth_enslave_pirates_west={
+    manpower_recovery_speed = 0.1
+    sailors_recovery_speed = 0.2
+    naval_maintenance_modifier = -0.1
+}
+
+kth_religious_peace = {
+    tolerance_heathen = 2
+    tolerance_heretic = 3
+}
+
+#kth_religious_peace = {
+#    global_unrest = -2
+#    stability_cost_modifier = -0.33
+#    legitimacy = 1
+#    republican_tradition = 0.5
+#}
+
+kth_enslaved_all_pirates = {
+    global_foreign_trade_power = 0.05
+    diplomatic_reputation = 1
+    sailors_recovery_speed = 0.1
+    naval_maintenance_modifier = -0.05  
+}
+
+kth_atlantic_colonies = {
+    colonists = 1
+    global_colonial_growth = 40
+}
+
+kth_colonies_integrated = {
+    reduced_liberty_desire = 10
+}
+
+kth_march_over_the_alps = {
+    prestige = 1
+    land_attrition = -0.1
+    army_tradition = 1
+    discipline = 0.05
+}
+kth_battle_of_cannae_modifier = {
+    army_tradition_decay = -0.003
+}
+kth_through_the_dessert_modifier = {
+    land_attrition = -0.1
+    trade_efficiency = 0.05
+    trade_steering = 0.1
+}
+
+kth_enrichment_of_oligarchy_modifier = {
+    global_autonomy = 0.05
+    advisor_cost = -0.33
+}
+
+kth_successful_revolution_modifier = {
+    republican_tradition = 0.2
+}
+
+kth_failed_revolution_modifier = {
+    max_absolutism = 5
+}
+
+
+#temp event modifiers
+
+kth_import_african_elephants = {
+    land_morale = 0.05
+    cavalry_cost = 0.25
+    cavalry_power = 0.5
+    cav_to_inf_ratio = -0.2
+}
+
+kth_import_indian_elephants = {
+    land_morale = 0.05
+    cavalry_cost = 0.25
+    cavalry_power = 0.5
+    cav_to_inf_ratio = -0.2
+}
+
+kth_colonial_spirit = {
+    global_tax_modifier = -0.1
+    trade_efficiency = -0.1
+    colonists = 1
+    global_colonial_growth = 10
+}
+
+#Religious
+kth_converted_by_extremists_modifier = {
+    local_unrest = 6
+    local_tax_modifier = -0.1
+    local_manpower_modifier = -0.1
+}
+
+kth_anti_religion_path_modifier = {
+    local_unrest = 6
+    local_tax_modifier = -0.1
+    local_manpower_modifier = -0.1
+}
+
+kth_religious_foundation_tolerant = {
+    stability_cost_modifier = 0.1
+    tolerance_heathen = 1
+}
+
+kth_religious_foundation_intolerant = {
+    tolerance_heathen = -1
+    global_heathen_missionary_strength = 0.03
+    missionary_maintenance_cost = -0.25
+}

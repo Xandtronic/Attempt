@@ -1,0 +1,16 @@
+name = "Fake War 2"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 4736 # Ahmadabad
+}
+
+1444.1.1 = {
+	add_attacker = TUN
+	add_defender = SIC
+}
+
+1444.11.1 = {
+	rem_attacker = TUN
+	rem_defender = SIC
+}

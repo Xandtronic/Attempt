@@ -1,0 +1,215 @@
+#A Kingdom Collection mod
+#The Kingdom Collection Core library is source-available at https://github.com/Kingdom-Collection-Mods.
+#Contact: Best over Discord Reloader#6504 or via Steam.
+#Copyright Reloader - All Rights Reserved
+kth_estate =
+{
+	icon = 3
+
+	# If true, country will get estate
+	trigger = {	
+		tag = KTH
+	}
+
+	# These scale with loyalty & power
+	country_modifier_happy = {
+		global_unrest = -1
+		trade_efficiency = 0.1
+	}
+	country_modifier_neutral = {
+		global_unrest = -0.5
+		trade_efficiency = 0.05
+	}	
+	country_modifier_angry = {
+		global_unrest = 1
+	}
+	land_ownership_modifier = {
+		kth_estate_loyalty_modifier = 0.2
+	}
+	
+	province_independence_weight = {
+		factor = 1
+		modifier = {
+			factor = 10
+			is_capital = yes
+		}
+		modifier = {
+			factor = 0.5
+			is_in_capital_area = no
+		}
+		modifier = {
+			factor = 0.5
+			OR = {
+				NOT = { development = 10 }
+				NOT = { province_trade_power = 5 }
+			}
+		}
+		modifier = {
+			factor = 2
+			development = 20
+		}
+		modifier = {
+			factor = 0.5
+			is_territorial_core = owner
+		}
+		modifier = {
+			factor = 1.5
+			province_trade_power = 10
+		}
+		modifier = {
+			factor = 1.5
+			province_trade_power = 20
+		}
+	}
+
+	# Influence modifiers
+	base_influence = 10
+	influence_modifier = {	
+		desc = kth_estate_great_carthage
+		trigger = {
+			capital_scope = {
+				OR = {
+					province_id = 1750
+					province_id = 341
+				}
+				development = 30
+			}
+			NOT = {
+				any_owned_province = {
+					higher_development_than = CAPITAL
+				}
+			}
+		}
+		influence = 5
+	}
+	loyalty_modifier = {
+		desc = kth_estate_carthage_is_capital
+		trigger = {
+			capital_scope = {
+				OR = {
+					province_id = 1750
+					province_id = 341
+				}
+				development = 30
+			}
+			NOT = {
+				any_owned_province = {
+					higher_development_than = CAPITAL
+				}
+			}
+		}
+		loyalty = 5
+	}
+	loyalty_modifier = {
+		desc = kth_estate_city_greater_carthage_loyalty
+		trigger = {
+			any_owned_province = {
+				higher_development_than = CAPITAL
+			}
+		}
+		loyalty = -10
+	}
+	influence_modifier = {
+		desc = kth_estate_city_greater_carthage_influence
+		trigger = {
+			any_owned_province = {
+				higher_development_than = CAPITAL
+			}
+		}
+		influence = -5
+	}
+	influence_modifier = {
+		desc = kth_home_trade_node_is_tunis
+		trigger = {
+			home_trade_node = {
+				province_id = 341
+			}
+		}	
+		influence = 10
+	}
+	influence_modifier = {
+		desc = kth_estate_carthage_is_capital_influence
+		trigger = {
+			capital_scope = {
+				OR = {
+					province_id = 1750
+					province_id = 341
+				}				
+			}
+		}	
+		influence = 10
+	}
+	loyalty_modifier = {
+		desc = kth_estate_carthage_is_capital_loyalty
+		trigger = {
+			capital_scope = {
+				OR = {
+					province_id = 1750
+					province_id = 341
+				}				
+			}
+		}
+		loyalty = 10
+	}
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}	
+		influence = -40
+	}
+	
+	loyalty_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER_LOY
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}
+		loyalty = -20
+	}
+	influence_modifier = {
+		desc = EST_VAL_OTHER_ESTATE_IN_POWER
+		trigger = {
+			OR = {
+				has_disaster = estate_nobility_disaster
+				has_disaster = estate_church_disaster
+				has_disaster = estate_brahmins_disaster
+				has_disaster = estate_jains_disaster
+			}
+		}	
+		influence = -40
+	}
+
+	#Custom Names
+	custom_name = {
+		desc = estate_merchant_guilds
+		trigger = {
+			always = no
+		}
+	}
+
+	color = { 240 240 150 }
+
+	privileges = {
+		kth_privilege_mercs
+		kth_privilege_ban_swords	
+		kth_privilege_free_trade_posts
+		kth_privilege_dependent_trade_posts
+		kth_privilege_slaves_for_navy
+		kth_privilege_slaves_for_labour
+	}
+
+	agendas = {
+	}
+
+	influence_from_dev_modifier = 0.75
+}

@@ -1,0 +1,31 @@
+somalian_river_pirate = {
+	icon = "pirate_republic"
+	allow_normal_conversion = no
+	lock_level_when_selected = yes
+	modifiers={
+		available_province_loot = 1
+		may_perform_slave_raid_on_same_religion = yes
+		naval_forcelimit_modifier = 0.2
+		allowed_marine_fraction = 0.15
+	}
+	potential = {
+		tag = SOM
+	}
+}
+
+dual_monarch_reform = {
+	icon = "queen"
+	allow_noral_conversion = no
+	lock_level_when_selected = yes
+	modifiers = {
+		colony_development_boost = 1
+		discipline = 0.05
+		global_ship_trade_power = 0.2
+		monarch_admin_power = 1
+		monarch_diplomatic_power = 1
+		monarch_military_power = 1
+	}
+	potential = {
+		tag = FE1
+	}
+}

@@ -1,0 +1,3 @@
+KTH = "countries/kth_Carthage.txt"
+EOH = "countries/EmpireOfHungary.txt"
+FE1 = "countries/DualMonarchy.txt"

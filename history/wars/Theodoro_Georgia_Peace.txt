@@ -1,0 +1,9 @@
+1444.01.1 = {
+	add_attacker = FEO
+	add_defender = GEO
+
+
+1444.11.11 = {
+	rem_attacker = FEO
+	rem_defender = GEO
+}

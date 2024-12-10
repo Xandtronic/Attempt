@@ -1,0 +1,9 @@
+1444.1.1 = {
+	add_attacker = MOS
+	add_defender = GOL
+}
+
+1444.9.1 = {
+	rem_attacker = MOS
+	rem_defender = GOL
+}

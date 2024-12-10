@@ -1,0 +1,20 @@
+mor_discipline ={
+	discipline = 0.05
+	land_morale = 0.1
+}
+
+som_giga_marines = {
+	discipline = 0.05
+	infantry_power = 0.1
+	is_marine_modifier = yes
+}
+gen_prov_trade = {
+	global_own_trade_power = 0.2
+}
+swa_united = {
+	local_development_cost = -0.05
+	trade_goods_size_modifier = 0.05
+}
+swa_loyal_vassals = {
+	reduced_liberty_desire = 50
+}

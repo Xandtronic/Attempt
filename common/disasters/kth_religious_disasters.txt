@@ -1,0 +1,356 @@
+#A Kingdom Collection mod
+#The Kingdom Collection Core library is source-available at https://github.com/Kingdom-Collection-Mods.
+#Contact: Best over Discord Reloader#6504 or via Steam.
+#Copyright Reloader - All Rights Reserved
+kth_religious_foundation_changed_disaster = {
+	potential = {
+		custom_trigger_tooltip = {
+			tooltip = kth_religion_foundation_changed_flag_tt
+			has_country_flag = kth_religion_foundation_changed_flag
+		}
+		is_free_or_tributary_trigger = yes
+		NOT = { has_country_flag = kth_had_religious_foundation_changed_disaster_flag } 
+		is_force_converted = no
+	}
+
+	
+	
+	can_start = {
+		custom_trigger_tooltip = {
+			tooltip = kth_religion_foundation_changed_flag_tt
+			has_country_flag = kth_religion_foundation_changed_flag
+		}
+		
+		NOT = {
+			custom_trigger_tooltip = {
+				tooltip = kth_had_religious_foundation_changed_disaster_flag_tt
+				has_country_flag = kth_had_religious_foundation_changed_disaster_flag
+			}
+		} 
+	}
+	
+	
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			custom_trigger_tooltip = {
+				tooltip = kth_had_religious_foundation_changed_disaster_flag_tt
+				has_country_flag = kth_had_religious_foundation_changed_disaster_flag
+			}
+		}		
+	}
+	
+	
+	
+	progress = {
+		modifier = {
+			factor = 1
+			always = yes
+		}
+		modifier = {
+			factor = 1
+			NOT = { religious_unity = 0.75 }
+			religious_unity = 0.5
+		} 		
+		modifier = {
+			factor = 2
+			NOT = { religious_unity = 0.5 }
+		} 
+		modifier = {
+			factor = 1
+			has_idea_group = religious_ideas
+		}
+		modifier = {
+			factor = 1
+			NOT = { stability = 0 }
+		}
+	}
+	
+	
+	can_end = {
+		OR = {
+			AND = {
+				NOT = { num_of_rebel_controlled_provinces = 1 }
+				OR = {
+					is_force_converted = yes
+					religious_unity = 0.9
+					NOT = {
+						any_owned_province = {
+							has_owner_religion = no
+							OR = {
+								religion_group = christian
+								religion_group = muslim
+							}
+						}		
+					}
+					full_idea_group = humanist_ideas
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = religious_turmoil_timelimit_tt
+				had_country_flag = { flag = kth_active_religious_foundation_changed_disaster_flag days = 9125 }
+			}
+		}
+	}
+	
+
+	
+	on_start = kth_religion_event.10
+	on_end = kth_religion_event.11
+
+	on_monthly = {
+		events = {
+		}
+		
+		random_events = { 
+			1200 = 0
+			#10 = to-do
+		}
+	}
+	modifier = {
+		stability_cost_modifier = 0.25
+	}
+}
+
+kth_jewish_path_disaster = {
+	potential = {
+		custom_trigger_tooltip = {
+			tooltip = kth_jewish_path_start_flag_tt
+			has_country_flag = kth_jewish_path_start_flag
+		}
+		is_free_or_tributary_trigger = yes
+		NOT = {
+			has_country_flag = kth_jewish_path_success_flag
+		}
+	}
+
+	
+	
+	can_start = {
+		custom_trigger_tooltip = {
+			tooltip = kth_jewish_path_start_flag_tt
+			has_country_flag = kth_jewish_path_start_flag
+		}
+	}
+	
+	
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			custom_trigger_tooltip = {
+				tooltip = kth_jewish_path_success_flag_tt
+				has_country_flag = kth_jewish_path_success_flag
+			}
+		}		
+	}
+	
+	
+	
+	progress = {
+		modifier = {
+			factor = 100
+			always = yes
+		}
+	}
+	
+	
+	can_end = {
+		OR = {
+			custom_trigger_tooltip = {
+				tooltip = kth_jewish_path_sucess_tt
+				has_country_flag = kth_jewish_path_success_flag
+			}
+			custom_trigger_tooltip = {
+				tooltip = kth_jewish_path_target_area_tt
+				OR = {
+					algiers_area = {
+						type = ALL
+						owned_by = ROOT
+						is_core = ROOT
+						religion = kc_jewish
+					}
+					palestine_area = {
+						type = ALL
+						owned_by = ROOT
+						is_core = ROOT
+						religion = kc_jewish
+					}
+					tigray_area = {
+						type = ALL
+						owned_by = ROOT
+						is_core = ROOT
+						religion = kc_jewish
+					}
+				}
+				had_country_flag = {
+					flag = kth_jewish_path_start_flag
+					days = 3650 #10 years
+				}
+			}
+			had_country_flag = {
+				flag = kth_jewish_path_start_flag
+				days = 10950 #30 years
+			}
+			hidden_trigger = {
+				religion = kc_jewish
+			}
+		}
+	}
+	
+
+	
+	on_start = kth_religion_event.40
+	on_end = kth_religion_event.41
+	
+	on_monthly = {
+		events = {
+		}
+		
+		random_events = {
+			#Chance any Event:
+			#471
+			#68%
+			300 = 0
+			#magic end
+			#2%
+			10 = kth_religion_event.42
+			#convert targets
+			#1%
+			5 = kth_religion_event.43
+			#convert random
+			#20%
+			100 = kth_religion_event.44
+			#king david & various
+			#1%
+			5 = kth_religion_event.45
+			#Anti Jewish Rebels
+			#4%
+			20 = kth_religion_event.46
+			#Extremist Jew Rebels
+			#4%
+			20 = kth_religion_event.47
+		}
+	}
+	modifier = {
+		tolerance_own = -3
+		tolerance_heathen = 1
+		stability_cost_modifier = 0.33
+	}
+}
+
+kth_pagan_path_disaster = {
+	potential = {
+		has_country_flag = kth_pagan_path_start_flag
+		is_free_or_tributary_trigger = yes
+		NOT = {
+			custom_trigger_tooltip = {
+				tooltip = kth_pagan_path_success_flag_tt
+				has_country_flag = kth_pagan_path_success_flag
+			}
+		}
+	}
+
+	
+	
+	can_start = {
+		custom_trigger_tooltip = {
+			tooltip = kth_pagan_path_start_flag_tt
+			has_country_flag = kth_pagan_path_start_flag
+		}
+	}
+	
+	
+	can_stop = {
+		OR = {
+			has_any_disaster = yes
+			custom_trigger_tooltip = {
+				tooltip = kth_pagan_path_success_flag_tt
+				has_country_flag = kth_pagan_path_success_flag 
+			}
+		}
+	}
+	
+	
+	
+	progress = {
+		modifier = {
+			factor = 100
+			always = yes
+		}
+	}
+	
+	
+	can_end = {
+		OR = {
+			custom_trigger_tooltip = {
+				tooltip = kth_pagan_path_sucess_tt
+				has_country_flag = kth_pagan_path_success_flag
+			}
+			custom_trigger_tooltip = {
+				tooltip = kth_pagan_path_target_area_tt
+				AND = {
+					syria_area = {
+						type = ALL
+						owned_by = ROOT
+						is_core = ROOT
+						religion = kc_canaan
+					}
+					palestine_area = {
+						type = ALL
+						owned_by = ROOT
+						is_core = ROOT
+						religion = kc_canaan
+					}
+				}
+				had_country_flag = {
+					flag = kth_pagan_path_start_flag
+					days = 3650 #10 years
+				}
+			}
+			had_country_flag = {
+				flag = kth_pagan_path_start_flag
+				days = 10950 #30 years
+			}
+			hidden_trigger = {
+				religion = kc_canaan
+			}
+		}
+	}
+	
+
+	
+	on_start = kth_religion_event.60
+	on_end = kth_religion_event.61
+	
+	on_monthly = {
+		events = {
+			
+		}
+		
+		random_events = { 
+			#Chance any Event:
+			#416
+			#72%
+			250 = 0
+			#2%
+			10 = kth_religion_event.62
+			#convert targets
+			#1%
+			5 = kth_religion_event.63
+			#convert random
+			#24%
+			100 = kth_religion_event.64
+			#pilgrimage to canaan
+			#6%
+			30 = kth_religion_event.65
+			#animal sacrifice
+			#6%
+			30 = kc_religion_canaan_event.9
+		}
+	}
+	modifier = {
+		tolerance_own = -3
+		tolerance_heathen = 1
+		stability_cost_modifier = 0.33
+	}
+}

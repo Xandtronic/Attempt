@@ -1,0 +1,9 @@
+estate_qizilbash = {
+	icon = 9
+
+	# If true, country will get estate
+	trigger = {
+		has_dlc = "Domination"
+		tag = azt
+		}
+	}#

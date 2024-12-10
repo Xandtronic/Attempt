@@ -1,0 +1,12 @@
+#A Kingdom Collection mod
+#The Kingdom Collection Core library is source-available at https://github.com/Kingdom-Collection-Mods.
+#Contact: Best over Discord Reloader#6504 or via Steam.
+#Copyright Reloader - All Rights Reserved
+kth_allow_religion_change = {
+	NOT = {
+		has_province_modifier = religious_center
+	}
+	NOT = {
+		has_province_modifier = religious_zeal_at_conv
+	}
+}

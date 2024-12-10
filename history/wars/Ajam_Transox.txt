@@ -1,0 +1,10 @@
+1444.1.1 = {
+	add_attacker = TRS
+	add_defender = QOM
+}
+
+# Peace
+1444.9.1 = {
+	rem_attacker = TRS
+	rem_defender = QOM
+}
