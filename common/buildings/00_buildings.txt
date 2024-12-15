@@ -49,6 +49,23 @@ marketplace = {
 			}
 			add_prosperity = 5
 		}
+
+
+		if = {
+			limit = {
+				NOT = {
+					has_province_modifier = market_places_cost_no_slot
+				}
+				owner = { has_idea = free_trade }
+				
+			}
+			hidden_effect = {
+				add_province_modifier = {
+					name = "market_places_cost_no_slot"
+					duration = -1
+				}
+			}
+		}
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -66,6 +83,17 @@ marketplace = {
 			}
 			add_prosperity = -5
 		}
+
+
+		if = {
+			limit = { has_province_modifier = market_places_cost_no_slot
+				}
+			remove_province_modifier = market_places_cost_no_slot
+			}
+
+
+		
+
 	}
 
 	on_construction_started = { } #Fires when you start the construction,  ROOT - Province FROM - Country that started
@@ -188,6 +216,24 @@ temple = {
 				hidden = yes
 			}
 		}
+
+		if = {
+			limit = {
+				NOT = {
+					has_province_modifier = churches_cost_no_slot
+				}
+				owner = { has_idea = bureaucracy}
+				
+			}
+			hidden_effect = {
+				add_province_modifier = {
+					name = "churches_cost_no_slot"
+					duration = -1
+				}
+			}
+		}
+
+		
 	}
 	on_destroyed = {
 		on_province_tax_building_destroyed_estate_privileges_effect = yes
@@ -245,6 +291,13 @@ temple = {
 			}
 			remove_province_modifier = azt_religious_classes
 		}
+
+		if = {
+			limit = { has_province_modifier = churches_cost_no_slot
+				}
+			remove_province_modifier = churches_cost_no_slot
+			}
+		
 	}
 	on_obsolete = {
 	}
@@ -507,6 +560,22 @@ fort_15th = {
 	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
 	on_built = {
 		bastard_dev_cost_add_from_buildings = yes
+
+
+		if = {
+			limit = {
+				NOT = {
+					has_province_modifier = scorched_earth
+				}
+				owner = { has_active_policy = unsiegable }
+			}
+			hidden_effect = {
+				add_province_modifier = {
+					name = "scorched_earth"
+					duration = -1
+				}
+			}
+		}
 		if = {
 			limit = {
 				FROM = { NOT = { mil_tech = 14 } has_government_attribute = on_fort_built_nobles_loyalty }
@@ -558,6 +627,15 @@ fort_15th = {
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
 	on_destroyed = {
 		bastard_dev_cost_remove_from_buildings = yes
+
+		if = {
+			limit = {
+				has_province_modifier = scorched_earth
+			}
+			hidden_effect = {
+				remove_province_modifier = scorched_earth
+			}
+		}
 		if = {
 			limit = {
 				has_province_modifier = estate_nobles_development_of_castles_mod
@@ -721,6 +799,22 @@ dock = {
 				add_sailors = 200
 			}
 		}
+
+		if = {
+			limit = {
+				NOT = {
+					has_province_modifier = docks_cost_no_slot
+				}
+				owner = { has_idea = sea_hawks }
+				
+			}
+			hidden_effect = {
+				add_province_modifier = {
+					name = "docks_cost_no_slot"
+					duration = -1
+				}
+			}
+		}
 		add_development_from_building = {
 			building = dock
 			type = production
@@ -739,6 +833,13 @@ dock = {
 				add_sailors = -200
 			}
 		}
+
+		if = {
+			limit = { has_province_modifier = docks_cost_no_slot
+				}
+			remove_province_modifier = docks_cost_no_slot
+		}
+
 		remove_development_from_building = {
 			building = dock
 			type = production
@@ -993,6 +1094,21 @@ fort_16th = {
 	# THIS = Province, FROM = Builder(not nessecairly owner, can be overlord)
 	on_built = {
 		bastard_dev_cost_add_from_buildings = yes
+
+		if = {
+			limit = {
+				NOT = {
+					has_province_modifier = scorched_earth
+				}
+				owner = { has_active_policy = unsiegable }
+			}
+			hidden_effect = {
+				add_province_modifier = {
+					name = "scorched_earth"
+					duration = -1
+				}
+			}
+		}
 		if = {
 			limit = {
 				FROM = { NOT = { mil_tech = 19 } has_government_attribute = on_fort_built_nobles_loyalty }
@@ -1044,6 +1160,15 @@ fort_16th = {
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
 	on_destroyed = {
 		bastard_dev_cost_remove_from_buildings = yes
+
+		if = {
+			limit = {
+				has_province_modifier = scorched_earth
+			}
+			hidden_effect = {
+				remove_province_modifier = scorched_earth
+			}
+		}
 		if = {
 			limit = {
 				has_province_modifier = estate_nobles_development_of_castles_mod
@@ -1163,6 +1288,22 @@ cathedral = {
 				}
 			}
 		}
+
+		if = {
+			limit = {
+				NOT = {
+					has_province_modifier = churches_cost_no_slot
+				}
+				owner = { has_idea = bureaucracy}
+				
+			}
+			hidden_effect = {
+				add_province_modifier = {
+					name = "churches_cost_no_slot"
+					duration = -1
+				}
+			}
+		}
 		add_province_modifier = {
 			name = azt_religious_classes
 			duration = -1
@@ -1225,6 +1366,12 @@ cathedral = {
 			}
 			remove_province_modifier = azt_religious_classes
 		}
+
+		if = {
+			limit = { has_province_modifier = churches_cost_no_slot
+				}
+			remove_province_modifier = churches_cost_no_slot
+			}
 	}
 	on_obsolete = {
 	}
@@ -1345,12 +1492,33 @@ trade_depot = {
 			value = 2
 			upgrade_value = 1
 		}
+
+		if = {
+			limit = {
+				NOT = {
+					has_province_modifier = market_places_cost_no_slot
+				}
+				owner = { has_idea = free_trade }
+				
+			}
+			hidden_effect = {
+				add_province_modifier = {
+					name = "market_places_cost_no_slot"
+					duration = -1
+				}
+			}
+		}
 	}
 	on_destroyed = {
 		remove_development_from_building = {
 			building = trade_depot
 			type = production
 			value = 2
+		}
+		if = {
+			limit = { has_province_modifier = market_places_cost_no_slot
+				}
+			remove_province_modifier = market_places_cost_no_slot
 		}
 	}
 	on_obsolete = {
@@ -1632,6 +1800,20 @@ fort_17th = {
 		bastard_dev_cost_add_from_buildings = yes
 		if = {
 			limit = {
+				NOT = {
+					has_province_modifier = scorched_earth
+				}
+				owner = { has_active_policy = unsiegable }
+			}
+			hidden_effect = {
+				add_province_modifier = {
+					name = "scorched_earth"
+					duration = -1
+				}
+			}
+		}
+		if = {
+			limit = {
 				FROM = { NOT = { mil_tech = 19 } has_government_attribute = on_fort_built_nobles_loyalty }
 			}
 			FROM = {
@@ -1681,6 +1863,13 @@ fort_17th = {
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
 	on_destroyed = {
 		bastard_dev_cost_remove_from_buildings = yes
+
+		if = {
+			limit = {
+				has_province_modifier = estate_nobles_development_of_castles_mod
+			}
+			remove_province_modifier = estate_nobles_development_of_castles_mod
+		}
 		if = {
 			limit = {
 				has_province_modifier = estate_nobles_development_of_castles_mod
@@ -1750,12 +1939,33 @@ stock_exchange = {
 				value = 3
 			}
 		}
+
+		if = {
+			limit = {
+				NOT = {
+					has_province_modifier = market_places_cost_no_slot
+				}
+				owner = { has_idea = free_trade }
+				
+			}
+			hidden_effect = {
+				add_province_modifier = {
+					name = "market_places_cost_no_slot"
+					duration = -1
+				}
+			}
+		}
 	}
 	on_destroyed = {
 		remove_development_from_building = {
 			building = stock_exchange
 			type = production
 			value = 3
+		}
+		if = {
+			limit = { has_province_modifier = market_places_cost_no_slot
+				}
+			remove_province_modifier = market_places_cost_no_slot
 		}
 	}
 	on_obsolete = {
@@ -1945,6 +2155,22 @@ drydock = {
 			value = 2
 			upgrade_value = 1
 		}
+
+		if = {
+			limit = {
+				NOT = {
+					has_province_modifier = docks_cost_no_slot
+				}
+				owner = { has_idea = sea_hawks }
+				
+			}
+			hidden_effect = {
+				add_province_modifier = {
+					name = "docks_cost_no_slot"
+					duration = -1
+				}
+			}
+		}
 	}
 	
 	on_destroyed = {
@@ -1962,6 +2188,22 @@ drydock = {
 			building = drydock
 			type = production
 			value = 2
+		}
+
+		if = {
+			limit = {
+				NOT = {
+					has_province_modifier = docks_cost_no_slot
+				}
+				owner = { has_idea = free_trade }
+				
+			}
+			hidden_effect = {
+				add_province_modifier = {
+					name = "docks_cost_no_slot"
+					duration = -1
+				}
+			}
 		}
 	}
 	on_obsolete = {
@@ -2181,6 +2423,20 @@ fort_18th = {
 		bastard_dev_cost_add_from_buildings = yes
 		if = {
 			limit = {
+				NOT = {
+					has_province_modifier = scorched_earth
+				}
+				owner = { has_active_policy = unsiegable }
+			}
+			hidden_effect = {
+				add_province_modifier = {
+					name = "scorched_earth"
+					duration = -1
+				}
+			}
+		}
+		if = {
+			limit = {
 				FROM = { has_government_attribute = on_fort_built_nobles_loyalty }
 			}
 			FROM = {
@@ -2230,6 +2486,14 @@ fort_18th = {
 	# THIS = Province, FROM = Destroyer, Will not be called on buildings made obsolete!
 	on_destroyed = {
 		bastard_dev_cost_remove_from_buildings = yes
+		if = {
+			limit = {
+				has_province_modifier = scorched_earth
+			}
+			hidden_effect = {
+				remove_province_modifier = scorched_earth
+			}
+		}
 		if = {
 			limit = {
 				has_province_modifier = estate_nobles_development_of_castles_mod
